@@ -1,16 +1,20 @@
-
 export default function handler(req, res) {
+  res.setHeader('Content-Type', 'text/html');
   res.status(200).send(`
     <!DOCTYPE html>
     <html>
       <head>
-        <meta property="og:title" content="TALON SEAL" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta property="og:title" content="Talon Seal Frame" />
+        
+        <!-- Frame Meta Tags -->
         <meta property="fc:frame" content="vNext" />
-        <meta property="fc:frame:image" content="https://imgur.com/a/your-image-url" />
-        <meta property="fc:frame:button:1" content="Lancer TALON SEAL" />
+        <meta property="fc:frame:image" content="https://i.imgur.com/mWm79zS.jpeg" />
+        <meta property="fc:frame:button:1" content="Talon Seal" />
       </head>
       <body>
-        <h1>TALON SEAL est en ligne !</h1>
+        <h1>Talon Seal Frame</h1>
       </body>
     </html>
   `);
